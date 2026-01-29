@@ -1,79 +1,58 @@
-This is a professional, high-quality `README.md` template designed specifically for your project. You can copy and paste this directly into a file named **README.md** in your project folder.
-
----
-
-# 🎓 Learning Management System (LMS)
+# Learning Management System (LMS)
 
 Developed by **Muhammad Mohsin** & **Ahmed Dawood**
 
-A comprehensive, full-stack Learning Management System built to streamline the education process. This application provides distinct, secure interfaces for both **Teachers** and **Students**, allowing for seamless course management, automated grading, and real-time data tracking.
+A professional, role-based Learning Management System built to handle the end-to-end academic cycle. This application features integrated database management, secure authentication, and automated grading systems for a streamlined educational experience.
 
 ---
 
 ## 🚀 Key Features
 
-### **For Teachers 👨‍🏫**
+### **Teacher Module**
 
-* **Course Management:** Create, update, and manage multiple courses with unique codes.
-* **Assignment Module:** Publish assignments with specific due dates, point values, and file attachments.
-* **Quiz Engine:** Build interactive MCQ-based quizzes with custom timers and question banks.
-* **Grade Book:** A centralized view to grade student submissions and track overall class performance.
+* **Course Creation:** Generate and manage courses with unique identification codes.
+* **Assignment Management:** Create assignments with deadlines, attachments, and total marks.
+* **Quiz System:** Design MCQ-based quizzes with custom duration and point systems.
+* **Grading System:** Review student submissions and manage a digital grade book.
 
-### **For Students 👨‍🎓**
+### **Student Module**
 
-* **Personal Dashboard:** Track enrolled courses, pending assignments, and upcoming quizzes.
-* **Submission Portal:** Upload assignment files directly through the app.
-* **Real-time Results:** Take quizzes and receive instant scoring and performance feedback.
-* **Grade Tracking:** View a complete history of obtained marks and feedback for all activities.
+* **Interactive Dashboard:** View enrolled courses and track pending tasks in real-time.
+* **Enrollment System:** Join courses using unique 6-digit access codes.
+* **Activity Portal:** Upload assignment files and attempt live quizzes.
+* **Grade Tracking:** Access instant results and feedback for all completed activities.
 
-### **System & Security 🛡️**
+### **Core System**
 
-* **Role-Based Access:** Secure login system that directs users to their specific dashboard based on their role.
-* **Password Recovery:** Integrated **SMTP (Gmail API)** to send recovery codes directly to the user's email.
-* **Activity Logs:** Real-time tracking of project actions (Course creation, Enrollments, etc.).
+* **Role-Based Access Control (RBAC):** Distinct interfaces and permissions for Teachers and Students.
+* **Password Recovery:** Secure email integration using SMTP for automated account recovery.
+* **Database Integration:** Full relational database support for tracking users, enrollments, and grades.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
+| Component | Technology |
 | --- | --- |
 | **Language** | C# (.NET Framework) |
-| **UI Framework** | Windows Forms (WinForms) |
-| **Database** | MySQL (Relational Schema) |
-| **Integration** | SMTP Protocol (Gmail) |
-| **Version Control** | Git / GitHub |
+| **Database** | MySQL |
+| **Architecture** | Relational Database Management |
+| **Protocol** | SMTP (for Email Notifications) |
 
 ---
 
 ## 📦 Database Setup
 
-To run this project locally, you will need to set up the MySQL database:
+The repository includes the necessary database schema to get started:
 
-1. **Install MySQL Workbench.**
-2. **Import Schema:** Locate the `database_export.sql` file in this repository.
-3. **Run Script:** Execute the script to create the tables (`users`, `courses`, `assignments`, `quizzes`, `submissions`, etc.).
-4. **Connection String:** Update the `App.config` or connection class in the C# code with your local MySQL `server`, `user`, and `password`.
-
----
-
-## 📸 Demo Preview
-
-> [!TIP]
-> **Showcase Tip:** You can upload screenshots of your Teacher Dashboard and Student Quiz screens here to make the README more visual!
+1. **Import SQL:** Open MySQL Workbench and import the provided `.sql` file included in this repository.
+2. **Configuration:** Ensure your local MySQL credentials match the connection string within the application code.
+3. **Run:** Once the database is active and the tables are populated, the application is ready for use.
 
 ---
 
-## 🤝 The Development Team
+## 🤝 Collaboration
 
-This project was a collaborative effort between:
+This project was co-developed by:
 
-* **Muhammad Mohsin** – Lead Developer / Logic & Backend
-* **Ahmed Dawood** – Lead Developer / UI Design & Database Architecture
-
----
-
-### **Security Warning**
-
-> [!IMPORTANT]
-> For security reasons, the Gmail SMTP password and MySQL root password have been removed from the public code. Please use your own credentials in the configuration file to test the email and database features.
+* **Muhammad Mohsin** * **Ahmed Dawood** ---
